@@ -1,12 +1,13 @@
 body {    
         font-family: "Roboto", sans-serif;
         color: #434455;  
-        background-color: #ffffff;
-    
-        margin: o auto;
-        width: 1440px;            
+        background-color: #ffffff;                   
 }
-h1, h2, h3 {
+.container {
+    width: 1128px;
+    margin: 0 auto;
+}
+h1, h2, h3, p {
     margin: 0;
     padding: 0;
 }
@@ -38,7 +39,7 @@ header {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
-        margin: 24px 76px;
+        margin: 24px 76px 0 0;
         
 }
 .logo-studio {
@@ -78,7 +79,7 @@ nav {
 .contacts {
     display: flex;
     gap: 40px;
-    margin: 24px 76px 24px 0;
+    margin: 24px 0;
 }
 .contacts-text {
     font-style: normal;
@@ -101,6 +102,10 @@ nav {
     background-color: #2E2F42;
     height: 600px;
     padding-top: 188px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .hero-image-title {
     font-weight: 700;
@@ -110,17 +115,21 @@ nav {
     text-align: center;
     color: #ffffff;
     text-align: center;
+    padding: 0 300px;
+    margin-bottom: 48px;
 }
 button {
     cursor: pointer;
     background-color: #4D5AE5;
     border: 0;
+    align-items: center;
 }
 .button-hero {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #ffffff;
+    padding: 16px 32px;
 }
 .button-hero:hover {
     background-color: #404bbf;
@@ -133,6 +142,13 @@ button {
 
 .feature-not-title {
     display: none;
+}
+
+.feature-list {
+    margin: 120px auto;
+    display: flex;
+    gap: 24px;
+
 }
 
 .feature-title {
@@ -154,6 +170,7 @@ button {
 
 .team {
     background-color: #F4F4FD;
+    height: 732px;
 }
 
 .team-title {
@@ -163,23 +180,41 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    padding-top: 120px;
+    margin-bottom: 72px;
+}
+.team-list {
+    display: flex;
+    gap: 24px;
+
 }
 .team-items {
     background-color: #ffffff;
+    text-align: center;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    box-shadow: 0px 1px 1px #79797b;
+           
+    
 }
 /* Cards Team */
+.team-items > img {
+    margin-bottom: 30px;
+}
 .team-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
 }
 .team-position {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 30px;
 }
 
 /* Section Portfolio */
@@ -191,20 +226,36 @@ button {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    margin-top: 120px;
 }
+
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 120px;
+}
+.portfolio-items > img {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
 .portfolio-service {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin-bottom: 8px;
+    margin-left: 16px;
 }
 .portfolio-type {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-
+    margin-bottom: 32px;
+    margin-left: 16px;
 }
 
 
@@ -213,9 +264,16 @@ button {
 footer {
     background-color: #2E2F42;
 }
+.ftr {
+    height: 320px;
+    padding-top: 100px;
+}
 
 .logo-ftr {
     color: #F4F4FD;
+}
+.ftr-content > p {
+    margin-top: 16px;
 }
 
 .footer-text {
@@ -223,4 +281,5 @@ footer {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #F4F4FD;
+    width: 264px;
 }

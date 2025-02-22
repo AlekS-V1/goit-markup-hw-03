@@ -1,15 +1,32 @@
 body {    
         font-family: "Roboto", sans-serif;
         color: #434455;  
-        background-color: #ffffff;               
+        background-color: #ffffff;
+    
+        margin: o auto;
+        width: 1440px;            
+}
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
@@ -21,14 +38,24 @@ ul {
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4d5ae5;
+        margin: 24px 76px;
         
 }
 .logo-studio {
     color: #2e2f42;
 }
 /* Menu navigation */
+nav {
+    display: flex;
+   
+}
 .nav-title {
     color: currentColor;
+}
+.nav-menu {
+    display: flex;
+    margin: 24px 0;
+    gap: 40px;
 }
 .nav-items {
     font-weight: 500;
@@ -36,16 +63,22 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    display: flex;
 }
 .nav-items:hover {
     color: #404bbf ;
 }
-.nav-items:focus {
+.nav-title:focus {
     color: #404bbf;
 }
 /* Section Address */
 .adr {
     font-style: normal
+}
+.contacts {
+    display: flex;
+    gap: 40px;
+    margin: 24px 76px 24px 0;
 }
 .contacts-text {
     font-style: normal;
@@ -66,6 +99,8 @@ ul {
 
 .hero-image {
     background-color: #2E2F42;
+    height: 600px;
+    padding-top: 188px;
 }
 .hero-image-title {
     font-weight: 700;

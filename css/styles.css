@@ -79,6 +79,7 @@ ul {
 .hero-image-title {
     font-weight: 700;
     font-size: 56px;
+    text-align: center;
     line-height: 107%;
     letter-spacing: 0.02em;
     color: #ffffff;
@@ -107,7 +108,7 @@ button {
 .feature-title {
     font-weight: 500;
     font-size: 20px;
-    text-align: center;
+    
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;

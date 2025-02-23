@@ -24,10 +24,11 @@ img {
     padding: 0 15px;
 }
 /* Section header */
-header {
-    border-bottom: 1px solid #e7e9fc;
-}
 .header-container {
+    border-bottom: 1px solid #e7e9fc;
+    /* display: flex; */
+}
+.header-container > .container {
     display: flex;
 }
 
@@ -106,8 +107,6 @@ header {
 .hero-image {
     background-color: #2E2F42;
     padding: 188px 0;
-    
-
 }
 .hero-image-title {
     font-weight: 700;
@@ -146,15 +145,16 @@ button {
 .feature {
     padding: 120px 0;
 }
-.feature-not-title {
-    visibility: hidden;
+.visually-hidden {
+    position: fixed;
+    transform: scale(0);
 }
 .feature-list {
     display: flex;
     gap: 24px;
 }
 .feature-items {
-    width: calc((100% - 72px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4)
 }
 .feature-title {
     font-weight: 500;

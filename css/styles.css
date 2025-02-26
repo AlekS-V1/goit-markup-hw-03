@@ -1,7 +1,9 @@
 body {    
         font-family: "Roboto", sans-serif;
         color: #434455;  
-        background-color: #ffffff;                   
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;                   
 }
 
 
@@ -17,6 +19,7 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
 }
 .container {
     width: 1158px;
@@ -146,15 +149,21 @@ button {
     padding: 120px 0;
 }
 .visually-hidden {
-    position: fixed;
-    transform: scale(0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 .feature-list {
     display: flex;
     gap: 24px;
 }
 .feature-items {
-    flex-basis: calc((100% - 3 * 24px) / 4)
+    flex: 1 1 calc((100% - 3 * 24px) / 4)
 }
 .feature-title {
     font-weight: 500;
@@ -282,10 +291,11 @@ footer {
 }
 .logo-ftr {
     color: #F4F4FD;
+    margin-bottom: 16px;
 }
 
 footer > .logo {
-    /* display: inline-block; */
+    display: inline-block;
     margin-bottom: 16px;
 }
 

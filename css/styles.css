@@ -148,7 +148,7 @@ button {
 .feature {
     padding: 120px 0;
 }
-h2 > .visually-hidden {
+.visually-hidden h2 {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -161,9 +161,12 @@ h2 > .visually-hidden {
 .feature-list {
     display: flex;
     gap: 24px;
+    padding: 0;
 }
 .feature-items {
     width: calc((100% - 3 * 24px) / 4);
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .feature-title {
     font-weight: 500;

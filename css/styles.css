@@ -43,13 +43,13 @@ img {
 .logo {
     font-family: "Raleway",
         sans-serif;
-        margin-right: 76px;
+    margin-right: 76px;
     font-weight: 700;
-        font-size: 18px;
-        line-height: 117%;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;        
+    font-size: 18px;
+    line-height: 117%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;        
         
 }
 .logo-studio {
@@ -148,7 +148,7 @@ button {
 .feature {
     padding: 120px 0;
 }
-.visually-hidden {
+h2 > .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -163,7 +163,7 @@ button {
     gap: 24px;
 }
 .feature-items {
-    flex: 1 1 calc((100% - 3 * 24px) / 4)
+    width: calc((100% - 3 * 24px) / 4);
 }
 .feature-title {
     font-weight: 500;
@@ -294,7 +294,7 @@ footer {
     margin-bottom: 16px;
 }
 
-footer > .logo {
+footer a {
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -305,4 +305,5 @@ footer > .logo {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     max-width: 264px;
+    margin: 0;
 }

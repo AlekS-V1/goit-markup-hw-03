@@ -80,7 +80,9 @@ img {
 .nav-title:focus {
     color: #404bbf;
 }
+
 /* Section Address */
+
 .adr {
     font-style: normal
 }
@@ -149,7 +151,15 @@ button {
     padding: 120px 0;
 }
 .visually-hidden {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 .feature-list {
     display: flex;
